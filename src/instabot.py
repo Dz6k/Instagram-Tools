@@ -32,7 +32,7 @@ text = r'''
 # webdriver arguments
 class TakeCookies(WDArguments):
     """
-    Take your sesson cookies and followers
+    Take your seasson cookies and followers
     
     OBS:
     all WebDriver arguments have already been predefined in WDArguments
