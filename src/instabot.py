@@ -359,5 +359,5 @@ class InstaBot(WDArguments):
 if __name__ == "__main__":
     pass
     # TakeCookies().mycookies()
-    # TakeCookies().myfollowers()
+    TakeCookies().myfollowers()
     # InstaBot().initialize()
