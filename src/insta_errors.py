@@ -3,7 +3,7 @@ class InvalidFormatError(Exception):
         self.msg = msg
         super().__init__(self.msg)
         # -------------------------------------------- #
-
+    
 
 class InvalidZeroParamError(Exception):
     def __init__(self, msg="Number 0(zero) is not accept"):

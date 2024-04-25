@@ -6,3 +6,4 @@ class LocalPath:
     useragents_path = os.path.abspath(r'jsons\useragents.json')
     followers_path = os.path.abspath(r'jsons\followers.json')
     comment_path = os.path.abspath(r'jsons\comments.json')
+    

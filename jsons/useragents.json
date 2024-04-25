@@ -257,7 +257,7 @@
     {
         "device": "chrome", "useragent": "Mozilla/5.0 (Linux; Linux x86_64; en-US) AppleWebKit/534.10 (KHTML, like Gecko) Chrome/47.0.3555.154 Safari/536"
     },
-    {
+    {   
         "device": "chrome", "useragent": "Mozilla/5.0 (Windows; U; Windows NT 6.2; WOW64; en-US) AppleWebKit/600.49 (KHTML, like Gecko) Chrome/47.0.2690.155 Safari/536"
     },
     {

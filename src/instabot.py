@@ -39,11 +39,11 @@ class TakeCookies(WDArguments):
     """
 
     def __init__(self):
-        super().__init__()
+        super().__init__() 
         self.url_login = 'https://www.instagram.com/accounts/login/'
         self.url_profile = 'https://www.instagram.com{}following/'
         # -------------------------------------------- #
-
+        
     def mycookies(self):
         self.driver = webdriver.Edge(options=self.options)
         # -------------------------------------------- #

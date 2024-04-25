@@ -14,7 +14,7 @@ src\__pycache__
 __pycache__/
 *.py[cod]
 
-# C extensions
+# C extensions 
 *.so
 # Distribution / packaging
 .Python
