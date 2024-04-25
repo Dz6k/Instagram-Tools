@@ -1,8 +1,7 @@
 #  Insta Tools
-
 ![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
 
-This software, called Insta Tools, is an automation tool designed for study purposes and not for mass spamming.
+This script, called Insta Tools, is an automation tool designed for study purposes and not for mass spamming.
 
 ---
 

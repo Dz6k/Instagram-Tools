@@ -360,4 +360,4 @@ if __name__ == "__main__":
     pass
     # TakeCookies().mycookies()
     # TakeCookies().myfollowers()
-    InstaBot().initialize()
+    # InstaBot().initialize()
