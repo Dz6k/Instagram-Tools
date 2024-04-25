@@ -2,10 +2,10 @@
 #  Insta Tools
 
 
-![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
-
-<a href="https://selenium.dev"><img src="https://selenium.dev/images/selenium_logo_square_green.png" width="180" alt="Selenium"/></a>
+![Python Logo](https://www.python.org/static/community_logos/python-logo.png) <a href="https://selenium.dev"><img src="https://selenium.dev/images/selenium_logo_square_green.png" width="180" alt="Selenium"/></a>
   
+
+
 
 This software, called Insta Tools, is an automation tool designed for study purposes and not for mass spamming.
 
