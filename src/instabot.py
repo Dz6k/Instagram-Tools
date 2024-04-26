@@ -42,8 +42,10 @@ class TakeCookies(WDArguments):
         super().__init__() 
         self.url_login = 'https://www.instagram.com/accounts/login/'
         self.url_profile = 'https://www.instagram.com{}following/'
+        # mobile user-agent
+        self.options.add_argument(
+            f'user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"')
         # -------------------------------------------- #
-    
     def mycookies(self):
         self.driver = webdriver.Edge(options=self.options)
         # -------------------------------------------- #
@@ -55,7 +57,7 @@ class TakeCookies(WDArguments):
             if new_url != first_url:
                 cookiesNew = self.driver.get_cookies()
                 with open(LocalPath.cookies_path, 'w') as file:
-                    json.dump(cookiesNew, file)
+                    json.dump(cookiesNew, file, ensure_ascii=False, indent=4)
 
                 self.driver.quit()
                 os.system('cls')
@@ -92,10 +94,17 @@ class TakeCookies(WDArguments):
         # -------------------------------------------- #
         self.driver.refresh()
         self.driver.implicitly_wait(20)
-
+        input('sexo?')
         try:
             cancel_popup = self.wait.until(exp_conditions.visibility_of_all_elements_located(
                 (By.XPATH, "//button[text()='Cancel']")))
+            cancel_popup[0].click()
+
+        except:
+            pass
+        try:
+            cancel_popup = self.wait.until(exp_conditions.visibility_of_all_elements_located(
+                (By.XPATH, "//div/button[text()='Not Now']")))
             cancel_popup[0].click()
 
         except:
@@ -357,7 +366,7 @@ class InstaBot(WDArguments):
 
 
 if __name__ == "__main__":
-    pass
-    # TakeCookies().mycookies()
+
+    TakeCookies().mycookies()
     TakeCookies().myfollowers()
-    # InstaBot().initialize()
+    InstaBot().initialize()

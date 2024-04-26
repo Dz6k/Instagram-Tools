@@ -5,7 +5,8 @@
 *This software, called Insta Tools, is an automation tool designed for study purposes and not for mass spamming.*
 
 ---
-
+**CAUTION: Excessive use can lead to anything from a warning to an account ban, use with caution**
+---
  
 <summary><strong>Whow this code work? </strong>
 
@@ -23,4 +24,3 @@ To start using Insta Tools, follow these steps:
 10. Typing is done in a loop to avoid detection, and each time the class is started, a new user-agent is randomly chosen.
 
 Please note that the use of Insta Tools is your responsibility and misuse may violate Instagram's terms of service. Use it only for educational and legitimate purposes.
-
