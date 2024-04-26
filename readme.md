@@ -5,7 +5,9 @@
 *This software, called Insta Tools, is an automation tool designed for study purposes and not for mass spamming.*
 
 ---
+
 **CAUTION: Excessive use can lead to anything from a warning to an account ban, use with caution**
+
 ---
  
 <summary><strong>Whow this code work? </strong>
