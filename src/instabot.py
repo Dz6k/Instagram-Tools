@@ -369,4 +369,4 @@ if __name__ == "__main__":
 
     TakeCookies().mycookies()
     TakeCookies().myfollowers()
-    InstaBot().initialize()
+    # InstaBot().initialize()

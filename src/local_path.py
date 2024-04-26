@@ -1,27 +1,18 @@
 import os
+from colorama import Fore
 
 
 class LocalPath:
-    try:
-        cookies_path = os.path.abspath(r'jsons\cookies.json')
-    except:
-        with open(r'jsons\cookies.json', 'w'):
-            pass
-        
-    try:
-        useragents_path = os.path.abspath(r'jsons\useragents.json')
-    except:
-        with open(r'jsons\useragents.json', 'w'):
-            pass
-        
-    try:
-        followers_path = os.path.abspath(r'jsons\followers.json')
-    except:
-        with open(r'jsons\followers.json', 'w'):
-            pass
-        
-    try:   
-        comment_path = os.path.abspath(r'jsons\comments.json')
-    except:
-        with open(r'jsons\comments.json', 'w'):
-            pass
+    cookies_path = os.path.abspath(r'jsons\cookies.json')
+    useragents_path = os.path.abspath(r'jsons\useragents.json')
+    followers_path = os.path.abspath(r'jsons\followers.json')
+    comment_path = os.path.abspath(r'jsons\comments.json')
+
+
+for attr_name in dir(LocalPath):
+    attr = getattr(LocalPath, attr_name)
+    if isinstance(attr, str) and attr.endswith('.json') and not os.path.exists(attr):
+        with open(attr, 'w'):
+            ...
+        print(Fore.GREEN + 'Folders Created: ' +
+              Fore.LIGHTMAGENTA_EX + f'{attr}{os.linesep}' + Fore.RESET)
