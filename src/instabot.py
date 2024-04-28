@@ -93,8 +93,6 @@ class TakeCookies(WDArguments):
                     self.driver.add_cookie(cookie)
         # -------------------------------------------- #
         self.driver.refresh()
-        self.driver.implicitly_wait(20)
-        input('sexo?')
         try:
             cancel_popup = self.wait.until(exp_conditions.visibility_of_all_elements_located(
                 (By.XPATH, "//button[text()='Cancel']")))
@@ -110,7 +108,7 @@ class TakeCookies(WDArguments):
         except:
             pass
         # -------------------------------------------- #
-        self.driver.implicitly_wait(20)
+  
         try:
             myuserhtml = self.driver.find_element(
                 By.XPATH, '//*/div/div/div[2]/div/div/div[1]/div[1]/div[1]/div/div/div/div/div[2]/div[6]/div/span/div/a').get_attribute('href')[25:]
